@@ -102,6 +102,7 @@
     &:hover {
       .select_box {
         display: flex;
+        z-index: 1;
       }
     }
 
@@ -145,8 +146,54 @@
     text-align: left;
     box-shadow: 0px 0px 30px #eee;
 
+    &:hover > .rc_img {
+      background-size: 110%;
+
+      .more_bt {
+        opacity: 1;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+
     .rc_img {
+      background-image: url("../images/pink_salt.jpg");
       height: 120px;
+      position: relative;
+      transition-duration: 0.2s;
+      background-position: center center;
+      background-size: 100%;
+      cursor: pointer;
+
+      .more_bt {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        margin-top: -17px;
+        margin-left: -68px;
+        width: 136px;
+        height: 35px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 35px;
+        display: inline-block;
+        background: #ffffff;
+        border-radius: 20px;
+        font-size: 13px;
+        color: #565656;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition-duration: 0.2s;
+      }
     }
 
     .rc_contents {
@@ -168,6 +215,7 @@
       .rc_subinfo {
         .icon {
           vertical-align: middle;
+          margin-right: 4px;
         }
         .rc_writer {
           margin-right: 15px;
@@ -178,10 +226,51 @@
         }
 
         .rc_comment {
-          margin-right: 10px;
+          margin-right: 20px;
+          margin-left: 10px;
+
           .icon {
             margin-top: -2px;
+            margin-right: 4px;
           }
+        }
+      }
+
+      .rc_job {
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .rc_desc {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 5px;
+        color: #707070;
+      }
+
+      .rc_bottom {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        left: 0px;
+        bottom: 23px;
+
+        .rc_time {
+          position: absolute;
+          top: 3px;
+          left: 30px;
+          font-weight: 550;
+        }
+
+        .rc_favorite {
+          position: absolute;
+          right: 22px;
+          top: 6px;
+          cursor: pointer;
+          font-size: 30px;
+          color: rgb(214, 91, 91);
         }
       }
     }
