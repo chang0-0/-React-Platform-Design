@@ -1,10 +1,12 @@
 import React from "react";
 import cn from "classnames";
 import "../styles/Body.scss";
+import "../styles/mobile.scss";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BiCommentDetail, BiBookmark } from "react-icons/bi";
 import { IoMdPeople } from "react-icons/io";
+import colorpaper from "../images/colorpaper.jpg";
 
 export const Body = () => {
   return (
@@ -22,6 +24,9 @@ export const Body = () => {
             <li>매거진</li>
             <li className={cn("login_menu")}>로그인/회원가입</li>
           </ul>
+        </div>
+        <div className={cn("mobile_menu")}>
+          <GiHamburgerMenu />
         </div>
       </div>
 
@@ -78,6 +83,69 @@ export const Body = () => {
         </div>
 
         <div className={cn("recruit_items_section")}>
+          <div className={cn("recruit_item")}>
+            <div className={cn("rc_img")}>
+              <span className={cn("more_bt")}>MORE VIEW</span>
+            </div>
+            <div className={cn("rc_contents")}>
+              <div className={cn("rc_title")}>
+                프론트엔드/백엔드 개발 공부하시는 분 함께해요!
+              </div>
+              <div className={cn("rc_subinfo")}>
+                <span className={cn("rc_writer")}>by 이지잇</span>
+                <span className={cn("rc_view")}>
+                  <IoMdPeople className={cn("icon")} />
+                  21
+                </span>
+                <span className={cn("rc_comment")}>
+                  <BiCommentDetail className={cn("icon")} />3
+                </span>
+              </div>
+              <div className={cn("rc_job")}>웹 개발자</div>
+              <div className={cn("rc_desc")}>
+                푸드테크/ 아이디어 구상 단계/ 현재 구성원 2명/ 장소미정/
+                ~모집시까지
+              </div>
+              <div className={cn("rc_bottom")}>
+                <div className={cn("rc_time")}>7시간전</div>
+                <div className={cn("rc_favorite")}>
+                  <BiBookmark className={cn("icon")} />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={cn("recruit_item")}>
+            <div className={cn("rc_img")}>
+              <span className={cn("more_bt")}>MORE VIEW</span>
+            </div>
+            <div className={cn("rc_contents")}>
+              <div className={cn("rc_title")}>
+                프론트엔드/백엔드 개발 공부하시는 분 함께해요!
+              </div>
+              <div className={cn("rc_subinfo")}>
+                <span className={cn("rc_writer")}>by 이지잇</span>
+                <span className={cn("rc_view")}>
+                  <IoMdPeople className={cn("icon")} />
+                  21
+                </span>
+                <span className={cn("rc_comment")}>
+                  <BiCommentDetail className={cn("icon")} />3
+                </span>
+              </div>
+              <div className={cn("rc_job")}>웹 개발자</div>
+              <div className={cn("rc_desc")}>
+                푸드테크/ 아이디어 구상 단계/ 현재 구성원 2명/ 장소미정/
+                ~모집시까지
+              </div>
+              <div className={cn("rc_bottom")}>
+                <div className={cn("rc_time")}>7시간전</div>
+                <div className={cn("rc_favorite")}>
+                  <BiBookmark className={cn("icon")} />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className={cn("recruit_item")}>
             <div className={cn("rc_img")}>
               <span className={cn("more_bt")}>MORE VIEW</span>

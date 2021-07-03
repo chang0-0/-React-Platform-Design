@@ -19,6 +19,10 @@
   color: #3c3c3c;
   border-bottom: 1px solid #efefef;
 
+  .mobile_view {
+    display: none !important;
+  }
+
   .logo_section {
     position: absolute;
     left: 30px;

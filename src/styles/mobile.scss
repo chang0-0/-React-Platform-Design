@@ -1,0 +1,99 @@
+@media only screen and (max-width: 800px) {
+  .header .main_menu {
+    display: none;
+  }
+
+  .mobile_view {
+    display: inherit !important;
+  }
+
+  .mobile_hidden {
+    display: none !important;
+  }
+
+  .header {
+    width: 100%;
+    padding-top: 11px;
+    border-bottom: none;
+    height: 40px;
+
+    .logo_section {
+      left: 15px;
+      top: 15px;
+      font-size: 16px;
+    }
+
+    .page_title {
+      left: 110px;
+      padding-left: 15px;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+  }
+  .mobile_menu {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+  }
+
+  .contents_wrap {
+    .filter_section {
+      border-top: 1px solid #efefef;
+      height: 40px;
+      z-index: 10;
+
+      .filter_deco {
+        display: none;
+      }
+
+      .filter_item {
+        font-size: 11px;
+        line-height: 40px;
+        width: 80px;
+
+        .select_box {
+          top: 40px;
+
+          .region_select_box {
+            width: 100vw;
+          }
+
+          li {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  .recruit_items_section {
+    padding-top: 10px;
+
+    .recruit_item {
+      width: calc(100% - 20px);
+      margin: 10px 0px;
+      height: 350px;
+
+      .rc_contents {
+        padding: 5px 20px;
+      }
+
+      .rc_title .rc_job {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+      .rc_bottom {
+        bottom: 15px;
+
+        .rc_time {
+          left: 20px;
+        }
+
+        .rc_favorite {
+          right: 20px;
+        }
+      }
+    }
+  }
+}
